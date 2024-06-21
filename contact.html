@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Page title -->
+    <title>Niko Holiday Home Rentals! | Peloponnese</title>
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <!-- Link Swiper's CSS for carousel-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!--Link to CSS-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header section with logo, navigation, and dark mode toggle -->
+    <header>
+        <div class="container">
+            <div class="left">
+                <a href="#" class="logo"><img src="img\1.Logo\Symbol Logo.png" alt="Logo" height="40"></a>
+                <div class="hm-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="right">
+                <nav>
+                    <ul>
+                        <li><a href="Index.html">Home</a></li>
+                        <li><a href="about.html">About&nbsp;Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><button id="toggle-dark-mode" class="button">Dark Mode</button></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact section heading -->
+    <section id="contact">
+        <div class="heading">
+            <h3>Contact&nbsp;Us</h3>
+        </div>
+    </section>
+    <br><br>
+
+    <!-- Centered paragraph providing contact details -->
+    <br>
+    <p align="center">You can also contact us with the email given at the bottom of the page for any inquiries or just text us in any of the applications mentioned bellow.</p>
+    <br>
+
+    <!-- Contact form section -->
+    <section id="contact">
+        <div>        
+            <form id="contact-form">
+                <!-- Name input field -->
+                <label for="name"><h3>Name:</h3></label>
+                <input type="username" id="username" name="username" class="form-control" placeholder="e.g. John, Mary" required><br>
+                
+                <!-- Email input field -->
+                <label for="email"><h3>Email:</h3></label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="e.g. John@hotmail.com" required><br>
+                
+                <!-- Phone input field -->
+                <label for="phone"><h3>Phone:</h3></label>
+                <input type="tel" id="phone" name="phone" pattern="[+]{1}[0-9]{11,14}" class="form-control" placeholder="e.g.+112345678999" required><br>
+
+                <!--Message input field-->
+                <label for="message"><h3>Message:</h3></label>
+                <textarea id="message" name="message" class="form-control" placeholder="e.g. I would like to use the bbq." required></textarea><br>
+                <br> 
+                <!-- Submit button -->
+                <button type="submit">Submit Message.</button>
+            </form>
+        </div>    
+    </section>
+
+<br>
+
+<p align="center">Swipe and Click On the House you Would Like to Check Out!</p>
+<!--Swiper Section-->
+<section class="home swiper" id="swiper">
+    <div class="swiper-wrapper container-fluid">
+                       
+        <div class="swiper-slide container">
+            <a href="yannis.html">
+                <img src="img/3.Yannis/01.jpeg" alt="Yannis">
+            </a>
+        </div>
+
+        <div class="swiper-slide container">
+            <a href="tota.html">
+                <img src="img\4.Tota\6.jpg" alt="Tota">
+            </a>
+        </div>
+        
+    </div>
+    <div class="swiper-pagination"></div>
+</section>
+<br>
+
+<!-- Footer section with contact information and social links -->
+<footer>
+    <div class="container-fluid">
+        <div class="left">
+            <!-- Logo and social media icons -->
+            <div class="logo">
+                <img src="img\1.Logo\Full Big Logo.png" alt="Logo" height="60">
+            </div>
+            <div class="social"> <!--No social media accounts yet-->
+                <a href=""><i class="fab fa-facebook"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-viber"></i></a>
+                <a href=""><i class="fab fa-whatsapp"></i></a>
+            </div>          
+        </div>
+        <!-- Contact information -->
+        <a href="mailto:nikopatsios@hotmail.com">nikopatsios@hotmail.com</a><br> 
+        <a href="tel:+306937058605">+30 693 705 8605</a><br>  
+        <!-- Copyright notice -->
+        <p>&copy;2024 Niko Rentals Copyright</p>
+        <p>All Rights Reserved.</p>
+    </div>
+</footer>
+
+<!-- External scripts -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Main JavaScript file -->
+<script src="main.js"></script>
+
+</body>
+</html>
