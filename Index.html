@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Page title -->
+    <title>Niko Holiday Home Rentals! | Peloponnese</title>
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <!-- Link Swiper's CSS for carousel-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    
+    <!-- Header section with navigation and logo -->
+    <section id="index-home">
+        <header>
+            <div class="container">
+                <div class="left">
+                    <a href="#" class="logo"><img src="img\1.Logo\Symbol Logo.png" alt="Logo" height="40">
+                    </a>
+                    <!-- Hamburger menu icon -->
+                    <div class="hm-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="right">
+                    <!-- Navigation links -->
+                    <nav>
+                        <ul>
+                            <li><a href="Index.html">Home</a></li>
+                            <li><a href="about.html">About&nbsp;Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><button id="toggle-dark-mode" class="button">Dark Mode</button></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Hero section with a welcome message and call-to-action button -->
+        <div class="hero-section">
+            <div class="hero-text">
+                <h1>Welcome to Niko Rentals!</h1>
+            </div>
+            <a href="#properties" class="btn-hero">Properties</a>
+        </div>
+    </section>
+    
+    <!-- Section detailing services offered -->
+    <section id="services">
+        <div class="heading">
+            <h3>Services</h3>
+        </div>
+    </section><br><br>
+
+    <!-- Paragraph describing services offered -->
+    <p class="paragraph";>Discover our dedicated services tailored to make your Peloponnesian getaway extraordinary. As a family-run operation, we take pride in curating a personalized experience for each guest, ensuring every detail of your stay is seamless and memorable. From cozy accommodations with modern amenities to insider tips on local attractions and hidden gems, we are committed to exceeding your expectations. Whether it's arranging personalized tours, recommending authentic eateries, or simply providing a warm welcome, our passion lies in creating moments that you'll cherish long after your visit. Embrace the essence of Greek hospitality with us and embark on a journey filled with relaxation, adventure, and unparalleled moments in the heart of the Peloponnese.</p>
+    
+    <!-- Section highlighting properties available -->
+    <section id="properties">
+      <div class="heading">
+          <h3>Our&nbsp;properties</h3>
+      </div>
+    </section>
+
+    <!-- Information and links for properties using Swiper -->
+    <br><br><p align="center">Swipe and Click On the House you Would Like to Check Out!</p>
+    <section class="home swiper" id="swiper">
+        <div class="swiper-wrapper container-fluid">
+            <!-- Slide for Yanni's Villa -->
+            <div class="swiper-slide container">
+                <a href="yannis.html">
+                    <img src="img/3.Yannis/01.jpeg" alt="Yannis">
+                </a>
+            </div>
+            <!-- Slide for Tota's House -->
+            <div class="swiper-slide container">
+                <a href="tota.html">
+                    <img src="img\4.Tota\6.jpg" alt="Tota">
+                </a>
+            </div>
+        </div>
+        <!-- Pagination for Swiper -->
+        <div class="swiper-pagination"></div>
+    </section>
+
+    <br>
+
+    <!-- Form and table section for user interaction -->
+    <div id="form-table">
+        <h3 align="center">What would you like to see next?</h1><br>
+        <!-- Form for adding items to the list -->
+        <form id="add-item-form">
+            <div>
+                <label for="item-name" class="form-label"><h4>Place Name:</h4></label>
+                <input type="text" class="form-control" id="item-name" placeholder="Type a place..." required>
+            </div>
+            <div>
+                <label for="item-description" class="form-label"><h4>Description:</h4></label>
+                <input type="text" class="form-control" id="item-description" placeholder="Eg. Beach, ruins, etc..." required>
+            </div><br>
+            <button type="submit" class="button"><h4>Add Place</h4></button>
+        </form>
+        <!-- Live search input -->
+        <br><div id="live-search">
+            <label for="search" class="form-label"><h4>Search:</h4></label>
+            <input type="text" class="form-control" id="search" placeholder="Type to search...">
+        </div><br>
+        <!-- Table displaying added items with options for sorting -->
+        <table class="table" id="items-table">
+            <thead>
+                <tr>
+                    <th><button class="button" data-sort="name"><h4>Sort by Name</h4></button></th>
+                    <th><button class="button" data-sort="description"><h4>Sort by Description</h4></button></th>
+                    <th><h3>Actions</h3></th> <!-- Actions column for item deletion -->
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dynamically populated table rows will appear here -->
+            </tbody>
+            <h3>Click on Text to Edit</h3>
+        </table>
+    </div>
+
+    <br>
+
+    <!-- Footer section with contact information and social links -->
+    <footer>
+        <div class="container-fluid">
+            <div class="left">
+                <!-- Logo and social media icons -->
+                <div class="logo">
+                    <img src="img\1.Logo\Full Big Logo.png" alt="Logo" height="60">
+                </div>
+                <div class="social"> <!--No social media accounts yet-->
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-viber"></i></a>
+                    <a href=""><i class="fab fa-whatsapp"></i></a>
+                </div>          
+            </div>
+            <!-- Contact information -->
+            <a href="mailto:nikopatsios@hotmail.com">nikopatsios@hotmail.com</a><br> 
+            <a href="tel:+306937058605">+30 693 705 8605</a><br>  
+            <!-- Copyright notice -->
+            <p>&copy;2024 Niko Rentals Copyright</p>
+            <p>All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- External scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Main JavaScript file -->
+    <script src="main.js"></script>
+ 
+</body>
+</html>
